@@ -1,5 +1,3 @@
-// Hypotrochoid, Gregor Schneider, Paris, 05.05.2017
-
 void setup() {
   fullScreen();
   smooth();
