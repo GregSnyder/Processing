@@ -1,0 +1,17 @@
+function setup() {
+  createCanvas(1440,900);
+  frameRate(10);
+}
+    
+function draw() {
+      background(0);
+      loadPixels();
+      for (var y = 0; y < height*4; y++) {
+        for (var x = 0; x < width*4; x++) {
+          var index = (x + y * width);
+          var f = frameCount%100+1;
+          pixels[index] = 128+128*sin((f*y*sin(x))/999);
+        }
+      }
+    updatePixels();
+}
